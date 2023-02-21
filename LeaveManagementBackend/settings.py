@@ -1,5 +1,5 @@
 """
-Django settings for LeaveManagmentBackend project.
+Django settings for LeaveManagementBackend project.
 
 Based on by 'django-admin startproject' using Django 2.1.2.
 
@@ -26,7 +26,7 @@ SECRET_KEY = '237a580f-f1bb-4a83-9656-98f9e4d9fd30'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'RENDER' not in os.environ
 
-ALLOWED_HOSTS = ['192.168.1.15', 'localhost','leavemanagmentbackend-production.up.railway.app']
+ALLOWED_HOSTS = ['192.168.1.15', 'localhost']
 
 # Application references
 # https://docs.djangoproject.com/en/2.1/ref/settings/#std:setting-INSTALLED_APPS
@@ -56,8 +56,6 @@ MIDDLEWARE = ['corsheaders.middleware.CorsMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'LeaveManagmentBackend.urls'
-
 # Template configuration
 # https://docs.djangoproject.com/en/2.1/topics/templates/
 TEMPLATES = [
@@ -75,8 +73,6 @@ TEMPLATES = [
         },
     },
 ]
-
-WSGI_APPLICATION = 'LeaveManagmentBackend.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
